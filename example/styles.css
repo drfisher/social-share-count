@@ -1,0 +1,24 @@
+* {
+	font:normal 16px/1.5em "Helvetica Neue", Arial, Tahoma, sans-serif;
+}
+
+main {
+	margin: 0 auto;
+	width: 500px;
+	padding: 3em 2.25em;
+}
+
+.checkbox-label {
+	margin-right: .75em;
+}
+
+.url-label {
+	display: inline-block;
+	position: absolute;
+	text-align: right;
+	transform: translate(-110%, 2px);
+}
+
+.url-input {
+	width: 400px;
+}

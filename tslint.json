@@ -1,0 +1,15 @@
+{
+	"extends": [
+		"tslint:recommended"
+	],
+	"rules": {
+		"trailing-comma": [
+			true,
+			{
+				"multiline": "always",
+				"singleline": "never"
+			}
+		]
+	},
+	"jsRules": {}
+}

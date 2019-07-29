@@ -1,0 +1,56 @@
+{
+  "name": "social-share-count",
+  "version": "1.0.0",
+  "description": "Checks a number of shares in social networks for provided url",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run lint && npm test && tsc",
+    "lint": "tslint --fix ./src/**/*.ts && echo 'linter ok'",
+    "start": "tsc --watch",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drfisher/social-share-count.git"
+  },
+  "author": "Pavel Rybin <drfisherozersk@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drfisher/social-share-count/issues"
+  },
+  "homepage": "https://github.com/drfisher/social-share-count#readme",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "husky": "^3.0.1",
+    "jest": "^24.8.0",
+    "lint-staged": "^9.2.1",
+    "prettier": "^1.18.2",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.ts": [
+      "tslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "./preprocessor.js"
+    },
+    "testRegex": "__tests__/.*\\.(ts|js)$"
+  }
+}
